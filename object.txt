@@ -1,0 +1,17 @@
+1. Core Classes and Their Responsibilities 
+Single Responsibilities Principle    
+    1.1 Vehicle Speed Governor (VSG)
+    Central class that coordinates all VSG operations. It does not perform tasks itself but delegates to other objects.
+
+        * Responsibilities:
+            - Manage the VSG lifecycle
+            - Perform system health checks 
+            - Evaluate current speed and decide on control actions
+            - Manage system state (active, inactive, failsafe)
+            - Delegate interaction with sensors, actuators, alerts and logging
+
+    1.2. Interfaces
+    Abstract definitions that specify "what" a component must do, not "how". This allows for flexible swapping of implementations.
+
+    1.3. Concrete implementations
+    Classes that implement the interfaces, providing the actual or simulated logic for each component.
